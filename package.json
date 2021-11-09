@@ -1,0 +1,24 @@
+{
+  "name": "html-css-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webtsofficial/html-css-basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webtsofficial/html-css-basics/issues"
+  },
+  "homepage": "https://github.com/webtsofficial/html-css-basics#readme"
+}
