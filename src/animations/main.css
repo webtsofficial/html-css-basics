@@ -1,0 +1,30 @@
+#play-icon-1, #play-icon-2, #play-icon-3 {
+    transition: transform .2s ease-in-out;
+    will-change: transform;
+}
+
+#play-icon-1 {
+    color: #7400b8;
+    transform: translateX(-100%);
+}
+#play-icon-2 {
+    color: #48bfe3;
+    transform: translateX(-25%);
+}
+#play-icon-3 {
+    color: #80ffdb;
+    transform: translateX(-25%);
+}
+
+
+svg:hover #play-icon-1 {
+    transform: translateX(25%);
+}
+
+svg:hover #play-icon-2 {
+    transform: translateX(25%);
+}
+
+svg:hover #play-icon-3 {
+    transform: translateX(100%);
+}
