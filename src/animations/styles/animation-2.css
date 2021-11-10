@@ -1,0 +1,83 @@
+@keyframes fade-in-from-top-and-disappear {
+    0% {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    60% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+}
+
+@keyframes graph-appear-inside-pause {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    80 % {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+svg.animation-2-handheld-app-keyframe-animation .image-preview-group,
+svg.animation-2-handheld-app-keyframe-animation #header,
+svg.animation-2-handheld-app-keyframe-animation #bg-group-graph {
+    animation-name: fade-in-from-top-and-disappear;
+    animation-duration: 5s;
+    animation-timing-function: var(--cubic-bezier-swift);
+    animation-iteration-count: infinite;
+    will-change: transform, opacity;
+}
+
+svg.animation-2-handheld-app-keyframe-animation .group-path {
+    animation-name: graph-appear-inside-pause;
+    animation-duration: 5s;
+    animation-timing-function: var(--cubic-bezier-swift);
+    animation-iteration-count: infinite;
+    will-change: transform, opacity;
+}
+
+svg.animation-2-handheld-app-keyframe-animation #image-preview-group-1 {
+    animation-delay: .125s;
+}
+
+svg.animation-2-handheld-app-keyframe-animation #image-preview-group-2 {
+    animation-delay: .15s;
+}
+
+svg.animation-2-handheld-app-keyframe-animation #image-preview-group-3 {
+    animation-delay: .175s;
+}
+
+svg.animation-2-handheld-app-keyframe-animation #image-preview-group-4 {
+    animation-delay: .2s;
+}
+
+svg.animation-2-handheld-app-keyframe-animation #bg-group-graph {
+    animation-delay: .225s;
+}
+
+svg.animation-2-handheld-app-keyframe-animation #graph-path-1 {
+    animation-delay: .225s;
+}
+
+svg.animation-2-handheld-app-keyframe-animation #graph-path-2 {
+    animation-delay: .250s;
+}
+
+svg.animation-2-handheld-app-keyframe-animation #graph-path-3 {
+    animation-delay: .275s;
+}

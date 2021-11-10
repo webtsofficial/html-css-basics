@@ -1,3 +1,6 @@
+@import "styles/animation-1.css";
+@import "styles/animation-2.css";
+
 :root {
     /* Color */
     --color-1: #7400b8;
@@ -11,46 +14,7 @@
         /* Cubic Bezier */
     --cubic-bezier-swift: cubic-bezier(.4, 0, .2, 1);
     --cubic-bezier-swifter: cubic-bezier(.4, 0, 0, 1);
-    --cubic-bezier-swif-in: cubic-bezier(0, 0, .2, 1);
-    --cubic-bezier-swif-out: cubic-bezier(.4, 0, 1, 1);
+    --cubic-bezier-swift-in: cubic-bezier(0, 0, .2, 1);
+    --cubic-bezier-swift-out: cubic-bezier(.4, 0, 1, 1);
     --cubic-bezier-heavy: cubic-bezier(.7, 0, .6, 1);
-}
-
-svg {
-    cursor: pointer;
-}
-
-#play-icon-1, #play-icon-2, #play-icon-3 {
-    transition: transform var(--duration-medium) var(--cubic-bezier-swift),
-                opacity var(--duration-medium) var(--cubic-bezier-swift);
-    will-change: transform, opacity;
-}
-
-#play-icon-1 {
-    color: var(--color-1);
-    transform: translateX(-35%);
-    opacity: 0;
-}
-#play-icon-2 {
-    color: var(--color-2);
-    transform: translateX(-28%);
-}
-#play-icon-3 {
-    color: var(--color-3);
-    transform: translateX(-25%);
-    opacity: 1;
-}
-
-svg:hover #play-icon-1 {
-    transform: translateX(25%);
-    opacity: 1;
-}
-
-svg:hover #play-icon-2 {
-    transform: translateX(28%);
-}
-
-svg:hover #play-icon-3 {
-    transform: translateX(30%);
-    opacity: 0;
 }

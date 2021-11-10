@@ -1,0 +1,42 @@
+/* Animation 1 */
+
+svg.animation-1-play-icon-hover-animation {
+    cursor: pointer;
+}
+
+svg.animation-1-play-icon-hover-animation #play-icon-1,
+svg.animation-1-play-icon-hover-animation #play-icon-2,
+svg.animation-1-play-icon-hover-animation #play-icon-3 {
+    transition: transform var(--duration-medium) var(--cubic-bezier-swift),
+    opacity var(--duration-medium) var(--cubic-bezier-swift);
+    will-change: transform, opacity;
+}
+
+svg.animation-1-play-icon-hover-animation #play-icon-1 {
+    color: var(--color-1);
+    transform: translateX(-35%);
+    opacity: 0;
+}
+svg.animation-1-play-icon-hover-animation #play-icon-2 {
+    color: var(--color-2);
+    transform: translateX(-28%);
+}
+svg.animation-1-play-icon-hover-animation #play-icon-3 {
+    color: var(--color-3);
+    transform: translateX(-25%);
+    opacity: 1;
+}
+
+svg.animation-1-play-icon-hover-animation:hover #play-icon-1 {
+    transform: translateX(25%);
+    opacity: 1;
+}
+
+svg.animation-1-play-icon-hover-animation:hover #play-icon-2 {
+    transform: translateX(28%);
+}
+
+svg.animation-1-play-icon-hover-animation:hover #play-icon-3 {
+    transform: translateX(30%);
+    opacity: 0;
+}
