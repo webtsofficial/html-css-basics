@@ -1,27 +1,49 @@
+:root {
+    /* Color */
+    --color-1: #7400b8;
+    --color-2: #48bfe3;
+    --color-3: #80ffdb;
+    /* Animation */
+        /* Duration */
+    --duration-short: .2s;
+    --duration-medium: .5s;
+    --duration-long: .8s;
+        /* Cubic Bezier */
+    --cubic-bezier-swift: cubic-bezier(.4, 0, .2, 1);
+    --cubic-bezier-swifter: cubic-bezier(.4, 0, 0, 1);
+    --cubic-bezier-swif-in: cubic-bezier(0, 0, .2, 1);
+    --cubic-bezier-swif-out: cubic-bezier(.4, 0, 1, 1);
+    --cubic-bezier-heavy: cubic-bezier(.7, 0, .6, 1);
+}
+
 svg {
     cursor: pointer;
 }
 
 #play-icon-1, #play-icon-2, #play-icon-3 {
-    transition: transform .2s ease-in-out;
-    will-change: transform;
+    transition: transform var(--duration-medium) var(--cubic-bezier-swift),
+                opacity var(--duration-medium) var(--cubic-bezier-swift);
+    will-change: transform, opacity;
 }
 
 #play-icon-1 {
-    color: #7400b8;
-    transform: translateX(-50%);
+    color: var(--color-1);
+    transform: translateX(-35%);
+    opacity: 0;
 }
 #play-icon-2 {
-    color: #48bfe3;
+    color: var(--color-2);
     transform: translateX(-28%);
 }
 #play-icon-3 {
-    color: #80ffdb;
+    color: var(--color-3);
     transform: translateX(-25%);
+    opacity: 1;
 }
 
 svg:hover #play-icon-1 {
     transform: translateX(25%);
+    opacity: 1;
 }
 
 svg:hover #play-icon-2 {
@@ -29,5 +51,6 @@ svg:hover #play-icon-2 {
 }
 
 svg:hover #play-icon-3 {
-    transform: translateX(50%);
+    transform: translateX(30%);
+    opacity: 0;
 }
